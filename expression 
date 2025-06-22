@@ -1,0 +1,11 @@
+a= int(input())
+b = int(input())
+c = int(input())
+aa=a + b + c
+bb=a * b * c
+cc=(a + b) * c
+dd=a * (b + c)
+ee=a + (b * c)
+ff=(a * b) + c
+list=[aa, bb, cc, dd, ee, ff]
+print(max(list))
