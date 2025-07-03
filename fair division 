@@ -1,0 +1,18 @@
+#abdulkerim kumel
+t = int(input())
+for i in range(t):
+    n = int(input())
+    a = list(map(int, input().split()))
+    
+    cnt1 = a.count(1)
+    cnt2 = a.count(2)
+    total = cnt1 + cnt2 * 2
+    
+    if total % 2 != 0:
+        print("NO")
+    else:
+        half = total // 2
+        if half % 2 != 0 and cnt1 == 0:
+            print("NO")
+        else:
+            print("YES")
